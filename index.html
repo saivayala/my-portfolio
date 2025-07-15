@@ -9,17 +9,21 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
+        html, body {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* Ensure html and body take full width and have no default margins */
+        }
         body {
             font-family: 'Inter', sans-serif;
             line-height: 1.6;
             color: #333;
             background-color: #f8fafc;
+            overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+        /* Removed custom .container CSS, now using Tailwind classes directly on div elements */
+
         /* Custom styles for better aesthetics */
         .hero-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -30,17 +34,10 @@
             border-bottom-right-radius: 2rem;
             box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
-        .hero-section h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-        .hero-section p {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-        }
+        /* Responsive font sizes for hero heading - defined via Tailwind classes in HTML */
+        /* .hero-section h1 { ... } */
+        /* .hero-section p { ... } */
+
         .about-section {
             padding: 4rem 0;
             background-color: #ffffff;
@@ -50,8 +47,8 @@
             position: relative;
             z-index: 10;
         }
+        /* Responsive font sizes for section headings - defined via Tailwind classes in HTML */
         .section-heading {
-            font-size: 2.5rem;
             font-weight: 800;
             color: #1a202c;
             text-align: center;
@@ -118,9 +115,9 @@
 <body>
     <!-- Hero Section -->
     <header class="hero-section">
-        <div class="container">
-            <h1 class="text-white">SAI KUMAR VAYALA</h1>
-            <p class="text-white">Certified Integration Engineer</p>
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white">SAI KUMAR VAYALA</h1>
+            <p class="text-lg sm:text-xl lg:text-2xl font-light text-white">Certified Integration Engineer</p>
             <div class="flex justify-center space-x-4 flex-wrap gap-y-4">
                 <a href="https://www.linkedin.com/in/vayala-saikumar" target="_blank" rel="noopener noreferrer" class="contact-link">
                     <i class="fab fa-linkedin mr-2"></i>
@@ -140,8 +137,8 @@
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="about-section container">
-        <h2 class="section-heading">
+    <section id="about" class="about-section container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
             <i class="fas fa-user-tie"></i>
             About Me
         </h2>
@@ -152,8 +149,8 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-12 bg-gray-50">
-        <div class="container">
-            <h2 class="section-heading">
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
                 <i class="fas fa-tools"></i>
                 Skills
             </h2>
@@ -178,8 +175,8 @@
 
     <!-- Work Experience Section -->
     <section id="experience" class="py-12 bg-white">
-        <div class="container">
-            <h2 class="section-heading">
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
                 <i class="fas fa-briefcase"></i>
                 Work Experience
             </h2>
@@ -192,7 +189,7 @@
                         <li>Successfully migrated over 10 business-critical projects from MuleSoft to Workato, significantly enhancing system efficiency and reducing operational overhead.</li>
                         <li>Developed real-time and bulk integrations with Databricks, Salesforce, Braze, and SurveyMonkey, utilizing Workato with Python scripting and AWS Lambda.</li>
                         <li>Implemented a CI/CD pipeline for Workato via Slack, ensuring efficient and reliable recipe deployment.</li>
-                        <li>Collaborated actively with stakeholders to translate complex business needs into clear technical designs and innovative solutions.</li>
+                        <li>Collaborated actively with stakeholders to translate complex business requirements into clear technical designs and innovative solutions.</li>
                     </ul>
                 </div>
 
@@ -221,7 +218,7 @@
                     <p class="text-lg text-gray-700">Apps Associates | 01/2021 - 12/2021</p>
                     <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
                         <li>Gained proficiency in MuleSoft, Workato, and OIC, adapting quickly to diverse functionalities.</li>
-                        <li>Developed robust API integrations and automated critical workflows, enhancing data flow and system efficiency.</li>
+                        <li>Developed robust API integrations and automated critical workflows, significantly enhancing data flow and system efficiency.</li>
                         <li>Demonstrated a proactive and rapid learning approach, consistently delivering impactful solutions.</li>
                     </ul>
                 </div>
@@ -231,8 +228,8 @@
 
     <!-- Projects Section -->
     <section id="projects" class="py-12 bg-gray-50">
-        <div class="container">
-            <h2 class="section-heading">
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
                 <i class="fas fa-project-diagram"></i>
                 Key Projects
             </h2>
@@ -300,8 +297,8 @@
 
     <!-- Education Section -->
     <section id="education" class="py-12 bg-white">
-        <div class="container">
-            <h2 class="section-heading">
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
                 <i class="fas fa-graduation-cap"></i>
                 Education
             </h2>
@@ -320,8 +317,8 @@
 
     <!-- Certifications Section -->
     <section id="certifications" class="py-12 bg-gray-50">
-        <div class="container">
-            <h2 class="section-heading">
+        <div class="container w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="section-heading text-3xl sm:text-4xl lg:text-5xl">
                 <i class="fas fa-certificate"></i>
                 Certifications
             </h2>
