@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Kumar Vayala - Integration Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8fafc;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+        /* Custom styles for better aesthetics */
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .hero-section p {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+        .about-section {
+            padding: 4rem 0;
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-top: -4rem; /* Overlap with hero for visual effect */
+            position: relative;
+            z-index: 10;
+        }
+        .section-heading {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #1a202c;
+            text-align: center;
+            margin-bottom: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .section-heading i {
+            color: #667eea; /* Icon color */
+        }
+        .skill-badge {
+            background-color: #e0e7ff;
+            color: #4338ca;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px; /* Full rounded */
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+            white-space: nowrap; /* Prevent breaking */
+        }
+        .skill-badge:hover {
+            background-color: #c7d2fe;
+        }
+        .experience-card, .project-card {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease-in-out;
+        }
+        .experience-card:hover, .project-card:hover {
+            transform: translateY(-5px);
+        }
+        .contact-link {
+            display: inline-flex;
+            align-items: center;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .contact-link:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+        .list-disc li {
+            position: relative;
+            padding-left: 1.5rem; /* Space for custom bullet */
+        }
+        .list-disc li::before {
+            content: "\f058"; /* Font Awesome check-circle icon */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900; /* Solid icon */
+            position: absolute;
+            left: 0;
+            color: #22c55e; /* Green color for bullet */
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="text-white">SAI KUMAR VAYALA</h1>
+            <p class="text-white">Certified Integration Engineer</p>
+            <div class="flex justify-center space-x-4 flex-wrap gap-y-4">
+                <a href="https://www.linkedin.com/in/vayala-saikumar" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    LinkedIn
+                </a>
+                <a href="mailto:saikumarvayala@gmail.com" class="contact-link">
+                    <i class="fas fa-envelope mr-2"></i>
+                    Email Me
+                </a>
+                <!-- You can add a link to your resume PDF if you host it online -->
+                <!-- <a href="your_resume_link.pdf" target="_blank" rel="noopener noreferrer" class="contact-link">
+                    <i class="fas fa-file-alt mr-2"></i>
+                    View Resume
+                </a> -->
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section container">
+        <h2 class="section-heading">
+            <i class="fas fa-user-tie"></i>
+            About Me
+        </h2>
+        <p class="text-lg text-gray-700 text-center max-w-3xl mx-auto">
+            A highly skilled and certified Integration Engineer with over 4 years of experience, specializing in designing, developing, and implementing robust API integrations and seamless data flow solutions. Proven expertise across MuleSoft, Oracle Integration Cloud, and Workato platforms, with a strong track record in diverse domains including finance, marketing, healthcare, and e-commerce. Adept at leveraging Python scripting and AWS Lambda for complex functions, and proficient in establishing CI/CD pipelines. Committed to translating complex business requirements into scalable, efficient, and high-quality integration solutions.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12 bg-gray-50">
+        <div class="container">
+            <h2 class="section-heading">
+                <i class="fas fa-tools"></i>
+                Skills
+            </h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-badge">Workato Automation Cloud</span>
+                <span class="skill-badge">MuleSoft Anypoint Platform</span>
+                <span class="skill-badge">Oracle Integration Cloud</span>
+                <span class="skill-badge">Dell Boomi Cloud</span>
+                <span class="skill-badge">Python Programming</span>
+                <span class="skill-badge">Java Programming</span>
+                <span class="skill-badge">C Programming</span>
+                <span class="skill-badge">Oracle SQL DB</span>
+                <span class="skill-badge">REST and SOAP Webservices</span>
+                <span class="skill-badge">Prompt Engineering Chat GPT</span>
+                <span class="skill-badge">Microsoft SQL Server</span>
+                <span class="skill-badge">Databricks EDS Ingestions</span>
+                <span class="skill-badge">Salesforce</span>
+                <span class="skill-badge">Android Application Development</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section id="experience" class="py-12 bg-white">
+        <div class="container">
+            <h2 class="section-heading">
+                <i class="fas fa-briefcase"></i>
+                Work Experience
+            </h2>
+            <div class="grid grid-cols-1 gap-8">
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">Integration Engineer</h3>
+                    <p class="text-lg text-gray-700">Coursera | 07/2023 - Present</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
+                        <li>Led the engineering and maintenance of critical integrations, automating internal processes and optimizing data flow.</li>
+                        <li>Successfully migrated over 10 business-critical projects from MuleSoft to Workato, significantly enhancing system efficiency and reducing operational overhead.</li>
+                        <li>Developed real-time and bulk integrations with Databricks, Salesforce, Braze, and SurveyMonkey, utilizing Workato with Python scripting and AWS Lambda.</li>
+                        <li>Implemented a CI/CD pipeline for Workato via Slack, ensuring efficient and reliable recipe deployment.</li>
+                        <li>Collaborated actively with stakeholders to translate complex business needs into clear technical designs and innovative solutions.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">Staff Consultant</h3>
+                    <p class="text-lg text-gray-700">Apps Associates | 04/2023 - 06/2023</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
+                        <li>Managed diverse integration projects utilizing MuleSoft, Oracle Integration Cloud (OIC), and Workato.</li>
+                        <li>Applied expertise across Oracle HCM modules (Finance, HRMS) and Salesforce integration.</li>
+                        <li>Ensured seamless data exchange by proficiently handling various file types including SFTP, XML, and CSV.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">Associate Consultant</h3>
+                    <p class="text-lg text-gray-700">Apps Associates | 01/2022 - 03/2023</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
+                        <li>Contributed to multiple integration projects, developing expertise in MuleSoft, OIC, and Workato.</li>
+                        <li>Spearheaded the organization's inaugural Workato implementation.</li>
+                        <li>Managed diverse file types (SFTP, XML, CSV) for smooth data exchange, alongside Oracle HCM and Salesforce integrations.</li>
+                    </ul>
+                </div>
+
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">Associate Trainee</h3>
+                    <p class="text-lg text-gray-700">Apps Associates | 01/2021 - 12/2021</p>
+                    <ul class="list-disc list-inside text-gray-600 mt-4 space-y-2">
+                        <li>Gained proficiency in MuleSoft, Workato, and OIC, adapting quickly to diverse functionalities.</li>
+                        <li>Developed robust API integrations and automated critical workflows, enhancing data flow and system efficiency.</li>
+                        <li>Demonstrated a proactive and rapid learning approach, consistently delivering impactful solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gray-50">
+        <div class="container">
+            <h2 class="section-heading">
+                <i class="fas fa-project-diagram"></i>
+                Key Projects
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Migration Project: MuleSoft to Workato</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Led the strategic migration of 10+ complex MuleSoft integrations to Workato, ensuring business continuity and achieving $400K USD in savings for Coursera. Project involved real-time, scheduled, and API-based integrations with Salesforce, Databricks, and other platforms.
+                    </p>
+                    <!-- Add your actual project image here if available. -->
+                    <!-- <img src="your_project_image_url.jpg" alt="MuleSoft to Workato Migration" class="w-full h-48 object-cover rounded-md mb-4"> -->
+                    <!-- If you have a live demo or detailed case study, link it here -->
+                    <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold transition-colors duration-200">
+                        View Details
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                    </a> -->
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Social Media Analytics Integration</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Engineered integration of LinkedIn and TikTok analytics into Databricks (EDS), empowering Data Scientists with key metrics for optimizing marketing content strategy based on user engagement.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Salesforce Integrations</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Implemented robust integrations across multiple Salesforce instances at Coursera, ensuring comprehensive data consistency and integrity.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Braze Integration (Salesforce to Braze)</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Developed Salesforce to Braze integration to automate promotional and confirmation email delivery for user enrollments and interests, enhancing marketing follow-up capabilities.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">AR & AP Invoices Integrations (OIC)</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Designed and implemented OIC integrations for various payment sources to Oracle Finance Cloud, streamlining Accounts Payable and General Ledger journal creation from diverse source systems.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Concur to Oracle Fusion AP & GL Integration</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Built Workato integrations to facilitate automated creation of AP Invoices and GL Journals in Oracle Fusion from Concur files.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Google Cloud Platform to Salesforce Integration</h3>
+                    <p class="text-gray-600 text-base mb-4">
+                        Established bi-directional communication integrations between Salesforce and Google Cloud Platform using MuleSoft.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-12 bg-white">
+        <div class="container">
+            <h2 class="section-heading">
+                <i class="fas fa-graduation-cap"></i>
+                Education
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">BTech (CSE)</h3>
+                    <p class="text-lg text-gray-700">Narasaraopeta Engineering College | 07/2016 - 03/2020</p>
+                </div>
+                <div class="experience-card">
+                    <h3 class="text-2xl font-bold text-gray-900">Intermediate (Computers)</h3>
+                    <p class="text-lg text-gray-700">Kendriya Vidyalaya | 06/2014 - 03/2016</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-12 bg-gray-50">
+        <div class="container">
+            <h2 class="section-heading">
+                <i class="fas fa-certificate"></i>
+                Certifications
+            </h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="skill-badge">Oracle Cloud Platform Application Integration 2021 Certified Specialist</span>
+                <span class="skill-badge">MuleSoft Certified Developer Level 1</span>
+                <span class="skill-badge">Workato Automation Pro I, II & III Certification</span>
+                <span class="skill-badge">Enterprise Automation by Workato</span>
+                <span class="skill-badge">Boomi Associate Developer 2022</span>
+                <span class="skill-badge">Boomi Professional Developer 2023</span>
+                <span class="skill-badge">Android Developer Nano Degree by Udacity</span>
+                <span class="skill-badge">Integration Developer Certification by Workato</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-indigo-700 text-white text-center rounded-t-2xl">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-extrabold mb-4">Get in Touch</h2>
+            <p class="text-lg mb-6">I'm always open to new opportunities and collaborations. Feel free to connect!</p>
+            <div class="flex justify-center space-x-6 flex-wrap gap-y-4">
+                <a href="mailto:saikumarvayala@gmail.com" class="contact-link bg-white text-indigo-700 hover:bg-gray-100">
+                    <i class="fas fa-envelope mr-2"></i>
+                    saikumarvayala@gmail.com
+                </a>
+                <a href="https://www.linkedin.com/in/vayala-saikumar" target="_blank" rel="noopener noreferrer" class="contact-link bg-white text-indigo-700 hover:bg-gray-100">
+                    <i class="fab fa-linkedin mr-2"></i>
+                    vayala-saikumar
+                </a>
+                <a href="tel:+917093639187" class="contact-link bg-white text-indigo-700 hover:bg-gray-100">
+                    <i class="fas fa-phone-alt mr-2"></i>
+                    +91 7093639187
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-6 text-center text-gray-600 text-sm bg-gray-100">
+        <p>&copy; 2025 Sai Kumar Vayala. All rights reserved.</p>
+    </footer>
+</body>
+</html>
