@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sai Kumar Vayala — Resume</title>
+<meta name="description" content="Resume of Sai Kumar Vayala, Certified Integration Engineer with 5+ years across MuleSoft, Workato, and Oracle Integration Cloud.">
+<style>
+    /* ATS-friendly: single column, standard fonts, real text, logical headings, no tables/columns/graphics */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --ink:#1a1a1a; --muted:#444; --line:#cfcfcf; --accent:#2a4bb8; }
+    body {
+        font-family: 'Calibri', 'Helvetica Neue', Arial, sans-serif;
+        color: var(--ink);
+        background: #e9eaee;
+        line-height: 1.45;
+        font-size: 15px;
+        padding: 24px 12px;
+    }
+    .toolbar {
+        max-width: 820px;
+        margin: 0 auto 16px;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    .toolbar a, .toolbar button {
+        font-family: inherit;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 9px 16px;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: #fff;
+        color: var(--ink);
+        text-decoration: none;
+        cursor: pointer;
+        transition: all .15s;
+    }
+    .toolbar .primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .toolbar a:hover, .toolbar button:hover { filter: brightness(0.95); }
+
+    .page {
+        max-width: 820px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 48px 56px;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    }
+
+    header { border-bottom: 2px solid var(--accent); padding-bottom: 14px; margin-bottom: 18px; }
+    h1 { font-size: 28px; letter-spacing: 0.5px; color: var(--ink); margin-bottom: 3px; }
+    .role { font-size: 15px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+    .contact { font-size: 13.5px; color: var(--muted); }
+    .contact a { color: var(--muted); text-decoration: none; }
+    .contact span { white-space: nowrap; }
+    .contact .sep { margin: 0 7px; color: var(--line); }
+
+    section { margin-bottom: 18px; }
+    h2 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: var(--accent);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 3px;
+        margin-bottom: 9px;
+    }
+    p.summary { font-size: 14px; color: var(--ink); }
+
+    .job { margin-bottom: 13px; }
+    .job:last-child { margin-bottom: 0; }
+    .job-head { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 4px; }
+    .job-title { font-size: 14.5px; font-weight: 700; }
+    .job-company { font-weight: 600; color: var(--muted); }
+    .job-dates { font-size: 13px; color: var(--muted); font-weight: 600; white-space: nowrap; }
+    ul { margin: 5px 0 0 18px; }
+    li { font-size: 13.5px; margin-bottom: 3px; }
+
+    .skills-row { font-size: 13.5px; margin-bottom: 4px; }
+    .skills-row strong { display: inline-block; min-width: 168px; color: var(--ink); }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 28px; }
+    .cert-item, .edu-item { font-size: 13.5px; margin-bottom: 4px; }
+    .edu-item strong { display: block; }
+    .edu-item span { color: var(--muted); font-size: 13px; }
+
+    @media print {
+        /* Zero the paper margin and bake the whitespace into the page padding,
+           so margins always render regardless of the print dialog's margin setting. */
+        @page { margin: 0; size: letter; }
+        html, body {
+            background: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 10.5pt;
+            line-height: 1.4;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+        .toolbar { display: none; }
+        .page {
+            box-shadow: none;
+            max-width: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0.6in 0.7in;   /* visual margin lives here */
+        }
+        a { color: var(--ink); text-decoration: none; }
+
+        /* keep blocks intact across page breaks */
+        section { break-inside: avoid; page-break-inside: avoid; margin-bottom: 14px; }
+        .job { break-inside: avoid; page-break-inside: avoid; }
+        li, .cert-item, .edu-item { break-inside: avoid; page-break-inside: avoid; }
+        h2 { break-after: avoid; page-break-after: avoid; }
+        header { break-after: avoid; page-break-after: avoid; }
+        ul { margin-top: 4px; }
+    }
+    @media (max-width: 640px) {
+        .page { padding: 28px 22px; }
+        .two-col { grid-template-columns: 1fr; }
+        .skills-row strong { min-width: 0; display: block; }
+    }
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+    <a href="index.html">&larr; Back to Portfolio</a>
+    <a class="primary" href="SAI-KUMAR-VAYALA-INTEGRATIONS.pdf" download>Download PDF</a>
+    <button onclick="window.print()">Print / Save as PDF</button>
+</div>
+
+<main class="page">
+    <header>
+        <h1>SAI KUMAR VAYALA</h1>
+        <div class="role">Certified Integration Engineer</div>
+        <div class="contact">
+            <span><a href="mailto:saikumarvayala@gmail.com">saikumarvayala@gmail.com</a></span>
+            <span class="sep">|</span>
+            <span><a href="https://www.linkedin.com/in/vayala-saikumar" target="_blank" rel="noopener">linkedin.com/in/vayala-saikumar</a></span>
+            <span class="sep">|</span>
+            <span><a href="https://saivayala.github.io" target="_blank" rel="noopener">saivayala.github.io</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">Certified Integration Engineer with 5+ years of experience designing, developing, and implementing robust API integrations and seamless data flow solutions. Proven expertise across MuleSoft, Oracle Integration Cloud, Workato, and Dell Boomi, with a strong track record across finance, marketing, healthcare, and e-commerce domains. Skilled in Python scripting, AWS Lambda, and CI/CD pipelines. Adept at translating complex business requirements into scalable, efficient, high-quality integration solutions.</p>
+    </section>
+
+    <section>
+        <h2>Core Skills</h2>
+        <div class="skills-row"><strong>Integration Platforms:</strong> Workato, MuleSoft Anypoint Platform, Oracle Integration Cloud (OIC), Dell Boomi</div>
+        <div class="skills-row"><strong>Programming &amp; Scripting:</strong> Python, Java, C, DataWeave, SQL</div>
+        <div class="skills-row"><strong>Cloud &amp; APIs:</strong> AWS Lambda, REST &amp; SOAP Web Services, Google Cloud Platform, CI/CD Pipelines</div>
+        <div class="skills-row"><strong>Data &amp; Databases:</strong> Oracle SQL, Microsoft SQL Server, Databricks (EDS Ingestions), SFTP / XML / CSV</div>
+        <div class="skills-row"><strong>Enterprise Systems:</strong> Salesforce, Oracle HCM, Oracle Fusion, Braze, SurveyMonkey, Concur</div>
+        <div class="skills-row"><strong>Other:</strong> Prompt Engineering, Android Application Development</div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-head">
+                <span><span class="job-title">Integration Engineer</span> &mdash; <span class="job-company">Coursera</span></span>
+                <span class="job-dates">Jul 2023 &ndash; Present</span>
+            </div>
+            <ul>
+                <li>Led engineering and maintenance of business-critical integrations, automating internal processes and optimizing data flow across the organization.</li>
+                <li>Migrated 10+ business-critical projects from MuleSoft to Workato, delivering $400K in cost savings and improving system efficiency.</li>
+                <li>Developed real-time and bulk integrations with Databricks, Salesforce, Braze, and SurveyMonkey using Workato, Python, and AWS Lambda.</li>
+                <li>Implemented a CI/CD pipeline for Workato via Slack, enabling efficient and reliable recipe deployment across environments.</li>
+                <li>Engineered integration of LinkedIn and TikTok analytics into Databricks (EDS), empowering data scientists with key engagement metrics.</li>
+                <li>Collaborated with stakeholders to translate complex business requirements into scalable technical designs and solutions.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-head">
+                <span><span class="job-title">Staff Consultant</span> &mdash; <span class="job-company">Apps Associates</span></span>
+                <span class="job-dates">Apr 2023 &ndash; Jun 2023</span>
+            </div>
+            <ul>
+                <li>Managed diverse integration projects using MuleSoft, Oracle Integration Cloud (OIC), and Workato across multiple client engagements.</li>
+                <li>Applied expertise across Oracle HCM modules (Finance, HRMS) and Salesforce integrations to deliver quality solutions on time.</li>
+                <li>Ensured seamless data exchange by handling file types including SFTP, XML, and CSV.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-head">
+                <span><span class="job-title">Associate Consultant</span> &mdash; <span class="job-company">Apps Associates</span></span>
+                <span class="job-dates">Jan 2022 &ndash; Mar 2023</span>
+            </div>
+            <ul>
+                <li>Contributed to multiple integration projects, developing deep expertise across MuleSoft, OIC, and Workato.</li>
+                <li>Spearheaded the organization's inaugural Workato implementation, establishing reusable best practices for the team.</li>
+                <li>Managed diverse file types (SFTP, XML, CSV) for smooth data exchange, alongside Oracle HCM and Salesforce integrations.</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-head">
+                <span><span class="job-title">Associate Trainee</span> &mdash; <span class="job-company">Apps Associates</span></span>
+                <span class="job-dates">Jan 2021 &ndash; Dec 2021</span>
+            </div>
+            <ul>
+                <li>Gained proficiency in MuleSoft, Workato, and OIC, adapting quickly to diverse platform functionalities.</li>
+                <li>Developed robust API integrations and automated critical workflows, enhancing data flow and system efficiency.</li>
+                <li>Demonstrated a proactive, rapid-learning approach, consistently delivering impactful solutions early in the role.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Projects</h2>
+        <ul>
+            <li><strong>MuleSoft to Workato Migration:</strong> Migrated 10+ complex integrations to Workato at Coursera, achieving $400K in cost savings while maintaining business continuity (real-time, scheduled, and API-based integrations).</li>
+            <li><strong>Social Media Analytics Integration:</strong> Integrated LinkedIn and TikTok analytics into Databricks EDS to optimize marketing content strategy based on engagement metrics.</li>
+            <li><strong>Salesforce Multi-Instance Integrations:</strong> Built integrations across multiple Salesforce instances ensuring data consistency and integrity.</li>
+            <li><strong>Braze Email Automation:</strong> Automated promotional and confirmation email delivery via a Salesforce-to-Braze integration.</li>
+            <li><strong>AR &amp; AP Invoices (OIC):</strong> Streamlined Accounts Payable and General Ledger journal creation from diverse payment sources to Oracle Finance Cloud.</li>
+            <li><strong>Concur to Oracle Fusion AP &amp; GL:</strong> Automated AP Invoice and GL Journal creation in Oracle Fusion from Concur expense files using Workato.</li>
+            <li><strong>GCP to Salesforce Integration:</strong> Established bi-directional communication between Salesforce and Google Cloud Platform using MuleSoft.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <div class="two-col">
+            <div class="cert-item">Oracle Cloud Platform Application Integration 2021 Certified Specialist</div>
+            <div class="cert-item">MuleSoft Certified Developer &mdash; Level 1</div>
+            <div class="cert-item">Workato Automation Pro I, II &amp; III</div>
+            <div class="cert-item">Enterprise Automation by Workato</div>
+            <div class="cert-item">Boomi Associate Developer 2022</div>
+            <div class="cert-item">Boomi Professional Developer 2023</div>
+            <div class="cert-item">Integration Developer Certification by Workato</div>
+            <div class="cert-item">Android Developer Nanodegree &mdash; Udacity</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="two-col">
+            <div class="edu-item">
+                <strong>B.Tech, Computer Science &amp; Engineering</strong>
+                <span>Narasaraopeta Engineering College &middot; 2016 &ndash; 2020</span>
+            </div>
+            <div class="edu-item">
+                <strong>Intermediate (Computers)</strong>
+                <span>Kendriya Vidyalaya &middot; 2014 &ndash; 2016</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
